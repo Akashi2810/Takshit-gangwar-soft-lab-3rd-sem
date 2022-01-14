@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+class calculator{
+     public static void main(String[] args)
+    {
+        int num1, choice;
+        int num2;
+        
+            float answer=0;
+        System.out.println("Press 1 for addition");
+        System.out.println("Press 2 for subtraction");
+        System.out.println("Press 3 for multipliction");
+        System.out.println("Press 4 for division");
+        choice = System.in.Int(); 
+        System.out.println("Enter 1st value");
+        num1 = System.in.Int(); 
+        System.out.println("Enter 2nd value");
+        num2 = system.in.Int(); 
+      
+            if (choice == 1)
+            {
+                answer = num1 + num2;
+            }
+
+            if (choice == 2)
+            {
+                answer = num1 - num2;
+            }
+            if (choice == 3)
+            {
+                answer = num1 * num2;
+            }
+            if (choice == 4)
+            {
+                answer = num1 / num2;
+            }
+
+            System.Console.WriteLine("Answer=" +answer);
+/*sum=num1+ num2;
+sub=num1-num2;
+pro=num1*num2;
+div=num1/num2;
+        System.out.println("SUM of "+num1 +" and "+num2 +" is " +sum);
+        System.out.println("Subtraction of "+num2 +" from "+num1 +" is " +sub);
+        System.out.println("Product of "+num1 +" and "+num2 +" is " +pro);
+        System.out.println("Quotient of "+num1 +" and "+num2 +" is " +div);
+        */
+    }
+}
