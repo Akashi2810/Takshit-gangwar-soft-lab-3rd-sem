@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class program12_1
+{
+public static void main(String[] args)
+ {
+    int oct=0;
+    int last_digit=0;
+    int decimal=0;
+    int binary=0;
+    int rem=0;
+    int j=1;
+int base=1;
+System.out.println("Enter octal number");
+                                     Scanner sc =new Scanner(System.in);
+    oct =sc.nextInt();
+    sc.close();
+   while (oct!=0) 
+{
+
+    last_digit=oct%10;
+decimal += last_digit*base;
+oct=oct/10;
+
+base=base*8;
+
+
+    }
+    System.out.println("Decimal="+decimal);
+    
+    
+    while(decimal!=0)
+    {
+        rem = decimal%2;
+        binary += j*rem;   
+        decimal = decimal/2;
+        j=j*10;
+    }
+        System.out.println("Binary="+binary);
+   
+}
+
+}
