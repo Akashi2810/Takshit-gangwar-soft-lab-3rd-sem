@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class program7_1
+
+{
+    public static void main(String args[]) {
+       
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter First Number: ");
+        int a = sc.nextInt();
+        System.out.print("Enter Second Number: ");
+        int b = sc.nextInt();
+        System.out.print("Enter Third Number: ");
+        int c = sc.nextInt();
+        sc.close();
+        int g = Math.max(a, b);
+        g = Math.max(g, c);
+        
+        int s = Math.min(a, b);
+        s = Math.min(s, c);
+        
+        System.out.println("Greatest Number = " + g);
+        System.out.println("Smallest Number = " + s);
+    }
+}
