@@ -1,0 +1,26 @@
+import java.rmi.Remote;
+import java.util.Scanner;
+ 
+public class program11_1
+{
+	public static void main(String[] args) {
+	    Scanner in= new Scanner(System.in);
+	    int j=1, binary=0;
+		int rem=0;
+	  //int num=100;  
+		System.out.println("Enter a number");
+		int decimal = in.nextInt();
+		
+		
+		while(decimal!=0)
+        {//int j=1;
+		    rem = decimal%2;
+		    binary += j*rem;   
+		    decimal = decimal/2;
+		    j=j*10;
+		}
+	in.close();
+		
+		System.out.println(+binary);
+	}
+}
