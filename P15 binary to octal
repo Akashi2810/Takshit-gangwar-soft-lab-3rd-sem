@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class program15
+ {
+//binary to octal
+public static void main(String[] args)
+
+    {
+        int decimal=0;
+        int binary=0;
+        int base=1;
+        int rem=0;
+        int k=0;
+        int setofthree=0;
+        int octal=0;
+        int i=1;
+
+      Scanner sc = new Scanner(System.in);
+        System.out.println("Enter binary number");
+        binary =sc.nextInt();
+        sc.close();
+while (binary!=0)
+{   
+setofthree=binary%1000;
+setofthree=binary/1000;
+while (setofthree!=0)
+
+{
+    rem=setofthree%10;
+decimal=rem*base;
+           
+           k = k + decimal;
+           
+           setofthree = setofthree/10;
+         
+           
+           base = base *2;
+
+}
+k=k*i;
+octal= octal+k;
+i=i*10;
+}
+System.out.println("octal = " +octal);
+
+    }
+}    
+
