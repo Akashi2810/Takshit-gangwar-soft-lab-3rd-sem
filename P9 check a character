@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class program9
+ {
+    public static void main(String args[])
+
+    { System.out.println("INPUT");
+        Scanner sc =new Scanner(System.in);
+        char ch;
+     ch=sc.next().charAt(0);
+     sc.close();
+        if (ch >= 'A' && ch <= 'Z')
+            System.out.println("\n" + ch +
+                    " is an UpperCase character");
+     
+        else if (ch >= 'a' && ch <= 'z')
+            System.out.println("\n" + ch +
+                    " is an LowerCase character" );
+     
+                    else if (ch >= '0' && ch <= '9')
+            System.out.println("\n" + ch +
+                    " is an numeric character" );
+        else
+            System.out.println("\n" + ch +
+                    " is not an special character" );
+    }
+}
