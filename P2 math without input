@@ -1,0 +1,17 @@
+class calculator{
+     public static void main(String args[])
+    {
+        int num1=10;
+        int num2=20;
+        int sum=0 , sub=0 , pro=0 ;
+        float div;
+sum=num1+ num2;
+sub=num1-num2;
+pro=num1*num2;
+div=num1/num2;
+        System.out.println("SUM of "+num1 +" and "+num2 +" is " +sum);
+        System.out.println("Subtraction of "+num2 +" from "+num1 +" is " +sub);
+        System.out.println("Product of "+num1 +" and "+num2 +" is " +pro);
+        System.out.println("Quotient of "+num1 +" and "+num2 +" is " +div);
+    }
+}
